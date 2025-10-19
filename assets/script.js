@@ -51,7 +51,7 @@
   if (centerImg) {
     centerImg.addEventListener('click', (e) => {
       e.stopPropagation();
-      showPopup("My hobbies include: reading manga, watching movies, trying new restaurants, exercising, and being the World's Best Uncle.");
+      showPopup("Research interests include: Cardiovascular and renal pharmacology, general pharmacology, infectious diseases, immunology, virology, and toxicology.");
       displayImage.src = centerImg.src;
       displayImage.alt = centerImg.alt;
       imageDisplay.style.display = 'block';
