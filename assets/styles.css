@@ -27,7 +27,7 @@ main{ width:100%; display:flex; flex-direction:column; align-items:center; }
 header{  margin-top:1.3rem; text-align:center; }
 h1{ font-size:2rem; font-weight:700; }
 h2{ font-size:1.1rem; color:#475569; margin-top:0.25rem; }
-h3{ font-size:.95rem; color:#64748b; margin-top:0.3rem; }
+h3{ font-size:.95rem; color:#475569; margin-top:0.3rem; }
 
 /* Alma Mater Carousel */
 .alma-mater-carousel {
@@ -38,7 +38,6 @@ h3{ font-size:.95rem; color:#64748b; margin-top:0.3rem; }
 }
 
 .carousel-text {
-  color: #64748b;
   font-size: 1rem;
   font-style: italic;
   opacity: 1;
@@ -75,7 +74,7 @@ h3{ font-size:.95rem; color:#64748b; margin-top:0.3rem; }
   width:215px;
   height:215px;
   border-radius:50%;
-  border:10px solid #53565a;
+  border:10px solid #ceb888;
   object-fit:cover;
   position:absolute;
   top:50%;
@@ -104,7 +103,7 @@ h3{ font-size:.95rem; color:#64748b; margin-top:0.3rem; }
   width:145px;
   height:145px;
   border-radius:50%;
-  border:10px solid #53565a;
+  border:10px solid #fdc314;
   object-fit:cover;
   cursor:pointer;
   transition: transform .25s ease, box-shadow .25s ease;
