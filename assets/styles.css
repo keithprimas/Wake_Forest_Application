@@ -46,7 +46,7 @@ h3{ font-size:.95rem; color:#64748b; margin-top:0.3rem; }
   width:215px;
   height:215px;
   border-radius:50%;
-  border:7px solid #FDC314;
+  border:7px solid #8c6d2c;
   object-fit:cover;
   position:absolute;
   top:50%;
@@ -75,7 +75,7 @@ h3{ font-size:.95rem; color:#64748b; margin-top:0.3rem; }
   width:145px;
   height:145px;
   border-radius:50%;
-  border:5px solid #FDC314;
+  border:5px solid #8c6d2c;
   object-fit:cover;
   cursor:pointer;
   transition: transform .25s ease, box-shadow .25s ease;
@@ -160,11 +160,81 @@ footer{
 }
 
 /* Responsive */
-@media (max-width:520px){
+@media (max-width:550px){
   .circle-container{ width:90vw; height:90vw; max-width:483px; max-height:483px; }
   .center-image{ width:173px; height:173px; }
   .orbit-image{ width:107px; height:107px; }
   body{ justify-content:center; padding-bottom: 70px; }
   main{ padding-bottom:70px; }
   footer { height: 70px; }
+}
+
+@media (max-width: 550px) and (max-height: 1000px) {
+  .circle-container {
+    height: auto !important;
+    width: 100% !important;
+    max-width: none !important;
+    padding: 20px;
+  }
+  
+  .center-image {
+    position: relative;
+    transform: none;
+    margin: 0 auto 30px;
+    left: auto;
+    top: auto;
+  }
+  
+  .center-image:hover, .center-image:active {
+    transform: scale(1.10) !important;
+  }
+  
+  .orbit {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .orbit-image {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 120px;
+    max-width: 120px;
+    height: 120px;
+    max-height: 120px;
+  }
+  
+  .image-display {
+    display: none !important;
+  }
+  
+  .popup {
+    right: auto !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 90% !important;
+    text-align: center !important;
+    z-index: 30 !important;
+  }
+  
+  .image-display {
+    display: none !important;
+  }
+
+  footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+  background: #222222;
+  color: #ffffff;
+  z-index: 50;
+  height: 30px;
+  box-sizing: border-box;
+}
 }
