@@ -169,7 +169,7 @@ footer{
   footer { height: 70px; }
 }
 
-@media (max-width: 550px) and (max-height: 1300px) {
+@media (max-width: 550px) and (max-height: 1000px) {
   .circle-container {
     height: auto !important;
     width: 100% !important;
