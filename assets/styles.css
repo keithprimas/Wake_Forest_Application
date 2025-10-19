@@ -189,7 +189,7 @@ footer{
 
 /* Responsive */
 @media (max-width:550px){
-  .circle-container{ width:90vw; height:90vw; max-width:483px; max-height:483px; }
+  .circle-container{ width:90vw; height:90vw; max-width:483px; max-height:483px; top: -30px; }
   .center-image{ width:173px; height:173px; }
   .orbit-image{ width:107px; height:107px; }
   body{ justify-content:center; padding-bottom: 70px; }
