@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wake Forest University</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="name">Keith Primas</h1>
+    <h2 id="degree">Bachelor of Science in Biology</h2>
+    <h3 id="school">Wake Forest School of Medicine Molecular & Cellular Biosciences Ph.D. Program</h3>
+  </header>
+
+  <main>
+    <div class="circle-container">
+      <img src="assets/me.jpg" alt="Keith Primas" class="center-image" />
+
+      <div class="orbit">
+        <img src="assets/orgochem.png" alt="Organic Chemistry" class="orbit-image" data-info="Organic Chemistry: The study of carbon-containing compounds, their structure, properties, composition, and reactions." />
+        <img src="assets/cellbio.png" alt="Cell Biology" class="orbit-image" data-info="Cell Biology: Investigates cellular components, how they interact, and the vital processes that enable cells to grow, divide, specialize, and communicate." />
+        <img src="assets/biochem.png" alt="Biochemistry" class="orbit-image" data-info="Biochemistry: The study of chemical processes and components within cells, focusing on the structure, function, and interactions of biomolecules like proteins, nucleic acids, lipids, and carbohydrates." />
+        <img src="assets/microbio.png" alt="Microbiology" class="orbit-image" data-info="Microbiology: The study of microscopic organisms, such as bacteria, viruses, archaea, fungi, and protozoa." />
+        <img src="assets/GWU.png" alt="Gardner-Webb University" class="orbit-image" data-info="Gardner-Webb University: B.S. in Biology with Minors in Chemistry and Spanish. 3.09 GPA, 2017" />
+        <img src="assets/skills.png" alt="Skills" class="orbit-image" data-info="Skills include: Preparing bacterial cultures, gel electrophoresis, gas chromatography, analysis of mammalian cell types, Infrared Spectroscopy, steam distillation, conducting scientific research of peer-reviewed papers." />
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Keith Primas | All Rights Reserved</p>
+  </footer>
+
+  <!-- Popup -->
+  <div id="popup" class="popup" aria-hidden="true">
+    <button class="close-btn" aria-label="Close popup">&times;</button>
+    <p id="popup-text"></p>
+  </div>
+
+  <!-- Image Display -->
+  <div id="image-display" class="image-display" aria-hidden="true">
+    <button class="close-btn" aria-label="Close image">&times;</button>
+    <img id="display-image" src="" alt="" />
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
