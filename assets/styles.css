@@ -29,6 +29,35 @@ h1{ font-size:2rem; font-weight:700; }
 h2{ font-size:1.1rem; color:#475569; margin-top:0.25rem; }
 h3{ font-size:.95rem; color:#64748b; margin-top:0.3rem; }
 
+/* Alma Mater Carousel */
+.alma-mater-carousel {
+  text-align: center;
+  margin: 5px 0;
+  max-height: 40px;
+  display: block; /* Default display for desktop */
+}
+
+.carousel-text {
+  color: #64748b;
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 1;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.carousel-text.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hide alma mater on mobile devices */
+@media (max-width: 550px) {
+  .alma-mater-carousel {
+    display: none;
+  }
+}
+
 /* Container */
 .circle-container{
   position:relative;
@@ -37,7 +66,7 @@ h3{ font-size:.95rem; color:#64748b; margin-top:0.3rem; }
   width:621px;
   height:621px;
   margin:0.5rem auto 2rem auto;
-  top: -30px;
+  top: -65px;
 }
 
 /* Center image */

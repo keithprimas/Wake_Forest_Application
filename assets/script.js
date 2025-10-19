@@ -159,5 +159,43 @@
   // Also run on DOMContentLoaded as a fallback (if images cache quickly)
   document.addEventListener('DOMContentLoaded', () => {
     setTimeout(positionOrbit, 20);
+    initAlmaMaterCarousel();
   });
+
+   // Alma Mater Carousel
+  function initAlmaMaterCarousel() {
+    const almaMaterLines = [
+      "Dear Old Wake Forest,",
+      "Thine is a Noble Name;",
+      "Thine is a Glorious Fame,",
+      "Constant and True.",
+      "We Give Thee of Our Praise,",
+      "Adore Thine Ancient Days,",
+      "Sing Thee Our Humble Lays,",
+      "MOTHER, SO DEAR",
+      "Dear Old Wake Forest,",
+      "Mystic Thy Name to Cheer;",
+      "Be Thou Our Guardian Near Fore'er and Aye.",
+      "We Bow Before Thy Shrine,",
+      "Thy Brow With Bays Entwine,",
+      "All Honor Now Be Thine,",
+      "MOTHER, TODAY."
+    ];
+
+    const carouselText = document.querySelector('.carousel-text');
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      carouselText.classList.remove('active');
+      
+      setTimeout(() => {
+        carouselText.textContent = almaMaterLines[currentIndex];
+        carouselText.classList.add('active');
+        currentIndex = (currentIndex + 1) % almaMaterLines.length;
+      }, 500);
+    }
+
+    updateCarousel(); // Initial display
+    setInterval(updateCarousel, 5000); // Change every 5 seconds
+  }
 })();
